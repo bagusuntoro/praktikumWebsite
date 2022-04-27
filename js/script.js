@@ -22,3 +22,15 @@ function openNav() {
     const sumbuY = Math.round((event.clientY / window.innerHeight) * 255);
     document.body.style.backgroundColor = 'rgb(' + sumbuX + ',' + sumbuY + ',100)';
 });
+
+
+// push in computer lab
+document.body.addEventListener('click', function() {
+  const ubahColor=Math.round((event.clientX/window.innerWidth)*255);
+  if (ubahColor<50) {
+    document.body.style.color= 'white';
+  }else{
+    document.body.style.color= 'black';
+  }
+  console.log(ubahColor)
+})
